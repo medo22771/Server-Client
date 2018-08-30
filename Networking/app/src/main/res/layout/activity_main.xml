@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ghost.networking.MainActivity">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:id="@+id/LinearLayout1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/PortTextView"
+            android:text="Port"
+            android:textSize="20sp"
+            android:textColor="#000">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/PortID"
+            android:text="5000">
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout1"
+        android:weightSum="3"
+        android:id="@+id/LinearLayout2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:weightSum="2">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/StartServer"
+                android:text="Start Server"
+                android:layout_weight="1">
+
+            </Button>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/StopServer"
+                android:text="Close Server"
+                android:layout_weight="1"
+                android:enabled="false">
+
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:id="@+id/ServerStatus"
+                android:text="Server Offline"
+                android:textColor="#000"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:id="@+id/Clients"
+                android:scrollbars="vertical"
+                android:hint="No Clients Connected">
+
+            </TextView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/LinearLayout2"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="2.1"
+            android:id="@+id/Chat"
+            android:textSize="20sp"
+            android:textColor="#069"
+            android:background="#333"
+            android:scrollbars="vertical">
+
+        </TextView>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.5"
+            android:textColor="#000"
+            android:hint="Your Message"
+            android:id="@+id/ServerMsg">
+
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="right"
+            android:layout_weight="0.4"
+            android:text="Send"
+            android:textColor="#000"
+            android:id="@+id/SendBtn"
+            android:enabled="false">
+
+        </Button>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+<!--
+<LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:weightSum="2"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/ClientStatus"
+                android:gravity="center"
+                android:text="Not Connected"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_weight="2">
+
+            </TextView>
+
+        </LinearLayout>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/StartServer"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ConnectedClients"
+        android:text="Connected Clients"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:layout_marginTop="10dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ConnectedClients"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/Clients"
+        android:scrollbars="vertical">
+
+    </TextView>
+-->
